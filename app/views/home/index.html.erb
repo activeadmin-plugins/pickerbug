@@ -1,2 +1,10 @@
 <h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<p>Here's all the dtobjects</p>
+
+<% @dtobjects.each do |ob| %>
+<p><b style="margin-right: 10px;"><%=ob.id%>:</b>
+<%=ob.footime%>
+<b style="margin-left: 20px;">Name:</b> <%=ob.name%></p>
+<% end %>
+
